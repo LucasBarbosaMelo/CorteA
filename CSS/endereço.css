@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 153, 0, 0.938);
+}
+
+body:hover{
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-53%);
+    width: auto; 
+    padding: 20px 50px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+} 
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.navbar a
+{
+	padding: 8px 17px;
+	color: white;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.navbar a:hover
+{
+	background: rgb(255, 193, 21);
+	border-radius: 0.2rem;
+	transition: 0.2s all linear;
+} 
+
+h1 {
+    color: #333;
+}
+p {
+    font-size: 18px;
+    color: #333;
+}
+.map-container {
+    margin-top: 20px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.user-icon-inner {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Menu de opções do usuário */
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    padding: 10px;
+    z-index: 9;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu ul li {
+    margin-bottom: 10px;
+}
+
+.user-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Separador entre nome e opções */
+.name-separator {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd; /* Cor do traço */
+    margin: 10px 0; /* Espaçamento */
+}
